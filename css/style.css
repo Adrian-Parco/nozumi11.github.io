@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
 }
 
 nav{
     background-color: #012585;
 }
+
+    nav .navbar-brand{
+        letter-spacing: 4px;
+    }
 
 #heroSection{
     background-image: url("/images/patternpad.svg");
@@ -16,6 +23,11 @@ nav{
     color: #012585;
     text-align:center;
     align-items: center;
+}
+
+/* Main Section */
+.typewrite{
+    color: #012585;
 }
 
 @media screen and (max-width: 414px) {
