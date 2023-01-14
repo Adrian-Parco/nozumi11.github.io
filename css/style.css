@@ -30,6 +30,15 @@ nav{
     color: #012585;
 }
 
+.card{
+    height: 370px;
+}
+
+.card .card-body .card-title{
+    font-weight: 600;
+    color: #012585;
+}
+
 @media screen and (max-width: 414px) {
     #heroSection img{
         width: 200px;
