@@ -31,12 +31,8 @@ nav{
 }
 
 .card{
-    height: 370px;
-}
-
-.card .card-body .card-title{
-    font-weight: 600;
-    color: #012585;
+    width: calc(100%/3);
+    margin: 0.8em;
 }
 
 @media screen and (max-width: 414px) {
