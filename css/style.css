@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');
 
 *{
     margin: 0;
@@ -13,16 +14,24 @@ nav{
 
     nav .navbar-brand{
         letter-spacing: 4px;
+        font-family: 'Roboto Slab', serif;
     }
 
 #heroSection{
     background-image: url("/images/patternpad.svg");
     align-items: center;
+    height: 100vh;
 }
+#heroLogo{
+    max-width: 400px;
+    width: 100%;
+}
+
 #heroDescription{
     color: #012585;
     text-align:center;
     align-items: center;
+    font-size: clamp(0.5rem, -0.1rem + 2.4vw, 1.25rem);
 }
 
 /* Main Section */
@@ -31,24 +40,10 @@ nav{
 }
 
 .card{
-    width: calc(100%/3);
+    width: 100%;
+    max-width: 500px;
     margin: 0.8em;
 }
-
-@media screen and (max-width: 414px) {
-    #heroSection img{
-        width: 200px;
-        height: 200px;
-    }
-    #heroDescription{
-        padding: 0;
-    }
-        #heroDescription h2{
-            padding: 0;
-            font-size: 20px;    
-            text-align: center;
-        }
-  }
 
   @media screen and (min-width: 768px){
     #heroDescription{
