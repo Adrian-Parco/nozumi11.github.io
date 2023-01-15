@@ -20,7 +20,10 @@ nav{
 #heroSection{
     background-image: url("/images/patternpad.svg");
     align-items: center;
-    height: 100vh;
+    padding-top: 100px;
+    height: 100%;
+    max-height: 100vh;
+    
 }
 #heroLogo{
     max-width: 400px;
@@ -51,7 +54,7 @@ nav{
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 1px );
         -webkit-backdrop-filter: blur( 1px );
-        border-radius: 120px;
+        border-radius: 80px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
   }
