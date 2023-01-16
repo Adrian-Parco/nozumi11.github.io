@@ -80,7 +80,13 @@ nav .navbar-brand {
   text-align: justify;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  .card {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 900px) {
   #heroDescription {
     background: rgba(255, 255, 255, 0.45);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
