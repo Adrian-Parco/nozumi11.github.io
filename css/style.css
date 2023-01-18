@@ -148,6 +148,7 @@ nav .navbar-brand {
 }
 
 #formDesign {
+  height: 600px;
   border-radius: 10px;
   box-shadow: 0 10px 32px 0 rgba(31, 38, 135, 0.37);
 }
@@ -159,6 +160,8 @@ nav .navbar-brand {
 
 #formDesign button {
   background-color: #012585;
+  width: 300px;
+  height: 80px;
 }
 
 #banner {
@@ -174,6 +177,21 @@ nav .navbar-brand {
   left: 270px;
 }
 
+footer {
+  margin-top: 100px;
+  background-color: #012585;
+  font-size: clamp(0.75rem, 0.6429rem + 0.5357vw, 1.125rem);
+}
+
+#socMedIcons {
+  width: 450px;
+}
+
+#socMedIcons img {
+  margin: 5px;
+  width: 40px;
+}
+
 @media screen and (min-width: 200px) {
   .card-text {
     height: 110px;
@@ -181,13 +199,21 @@ nav .navbar-brand {
 
   #contactUsLogo {
     margin: auto;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
   }
   #gmap-canvas {
     margin: auto;
     height: 250px;
     width: 250px;
+  }
+  #formDesign {
+    height: 800px;
+  }
+  #formDesign button {
+    background-color: #012585;
+    width: 250px;
+    height: 50px;
   }
 }
 
@@ -208,6 +234,9 @@ nav .navbar-brand {
   #gmap_canvas {
     height: 300px;
     width: 350px;
+  }
+  #formDesign {
+    height: 600px;
   }
 }
 
