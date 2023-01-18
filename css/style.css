@@ -1,11 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "poppins", sans-serif;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
@@ -14,7 +19,7 @@ nav {
 
 nav .navbar-brand {
   letter-spacing: 4px;
-  font-family: "Roboto Slab", serif;
+  font-family: "poppins", serif;
 }
 
 #sectionTitles {
@@ -30,7 +35,7 @@ nav .navbar-brand {
   background-image: url("/images/patternpad.svg");
   align-items: center;
   margin-top: 70px;
-  height: 100vh;
+  max-height: 100vh;
 }
 #heroLogo {
   max-width: 400px;
@@ -147,20 +152,25 @@ nav .navbar-brand {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
-@media screen and (min-width: 425px) and (max-width: 767) {
+@media screen and (min-width: 200px) {
   .card-text {
-    height: 100px;
+    height: 110px;
+  }
+
+  #contactUsLogo {
+    height: 200px;
+    width: 200px;
+  }
+
+  #contactUsMaps {
+    height: 200px;
+    width: 200px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
-  #heroDescription {
-    background: rgba(255, 255, 255, 0.45);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
-    border-radius: 80px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+@media screen and (min-width: 768px) {
+  .card {
+    height: 720px;
   }
 
   .card img {
@@ -169,6 +179,30 @@ nav .navbar-brand {
   }
 
   #buttonInquiry {
-    margin-top: 20px;
+    margin-top: 100px;
+  }
+
+  #contactUsMaps {
+    height: 300px;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  #heroSection {
+    height: 100vh;
+  }
+
+  #buttonInquiry {
+    margin-top: 80px;
+  }
+
+  #heroDescription {
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
   }
 }
