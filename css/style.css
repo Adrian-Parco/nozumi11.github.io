@@ -148,9 +148,30 @@ nav .navbar-brand {
 }
 
 #formDesign {
-  border: 3px solid #012585;
   border-radius: 10px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 10px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#formDesign h4,
+#formDesign h5 {
+  color: #012585;
+}
+
+#formDesign button {
+  background-color: #012585;
+}
+
+#banner {
+  width: 80%;
+  height: 80px;
+  background-color: #012585;
+}
+
+#bannerName {
+  right: 200px;
+}
+#bannerPosition {
+  left: 270px;
 }
 
 @media screen and (min-width: 200px) {
@@ -159,13 +180,14 @@ nav .navbar-brand {
   }
 
   #contactUsLogo {
-    height: 200px;
-    width: 200px;
+    margin: auto;
+    height: 250px;
+    width: 250px;
   }
-
-  #contactUsMaps {
-    height: 200px;
-    width: 200px;
+  #gmap-canvas {
+    margin: auto;
+    height: 250px;
+    width: 250px;
   }
 }
 
@@ -183,13 +205,28 @@ nav .navbar-brand {
     margin-top: 100px;
   }
 
-  #contactUsMaps {
+  #gmap_canvas {
     height: 300px;
-    width: 500px;
+    width: 350px;
   }
 }
 
-@media screen and (min-width: 1028px) {
+@media screen and (max-width: 768px) {
+  #banner {
+    width: 80%;
+    height: 50px;
+    background-color: #012585;
+  }
+
+  #bannerName {
+    font-size: large;
+  }
+  #bannerPosition {
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   #heroSection {
     height: 100vh;
   }
@@ -205,5 +242,14 @@ nav .navbar-brand {
     -webkit-backdrop-filter: blur(1px);
     border-radius: 80px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #bannerName {
+    right: 120px;
+  }
+  #bannerPosition {
+    left: 250px;
   }
 }
